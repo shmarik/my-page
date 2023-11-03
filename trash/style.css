@@ -1,21 +1,97 @@
+@font-face {
+	font-family: 'Arial Black'; 
+	src: url(fonts/arial-black.ttf);
+}
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #181818;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-div{
-    background-color: azure;
-    border-radius: 5px;
-    max-width: 150px;
-    height: 30px;
-    text-align: center;
-    padding-top: 3px;
+
+header {
+    width: 98%;
+    height: 90px;
+    border: solid rgb(35, 35, 35) 5px;
+    border-radius: 15px;
+    font-family: 'Arial Black';
+    box-shadow: 0px 0px 6px 7px rgba(34, 60, 80, 0.2);
+    animation: headerDown .7s;
+    margin-top: 10px;
 }
-a{
+
+.header-conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    gap: 10%;
+}
+
+a {
+    color: rgb(35, 35, 35);
     text-decoration: none;
-    color: black;
+}
+
+.nav-link {
     font-size: 20px;
+}
+
+.card-img {
+    width: 50px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid white 5px;
+    border-radius: 15px;
+    width: 200px;
+    padding-right: 10px ;
+    height: 60px;
+    font-family: 'Arial Black';
+    box-shadow: 0px 0px 6px 7px rgba(34, 60, 80, 0.2);
+}
+
+.main-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1081px;
+}
+
+.name {
+    text-align: center;
+    color: white;
+}
+
+.phone-header {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    height: 13vh;
+}
+
+@keyframes headerDown {
+    0% {transform: translateY(-100px);}
+  100% {transform: translateY(0px);}
 }
