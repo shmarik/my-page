@@ -95,8 +95,16 @@ nav {
     max-width: 1140px;
 }
 
-h1 {
+.collection {
     font-size: 48px;
+}
+
+.sneaker-name {
+    font-size: 26px;
+}
+
+.discription {
+    font-size: 20px;
 }
 
 /* стили для контейнера кроссовок */
@@ -134,14 +142,6 @@ h1 {
     gap: 10px;
     width: 100%;
     padding: 32px 24px;
-}
-
-h3 {
-    font-size: 26px;
-}
-
-p {
-    font-size: 20px;
 }
 
 footer {
@@ -259,6 +259,16 @@ footer .nav-link {
     line-height: normal;
 }
 
+.about-sneaker-text {
+    margin-bottom: 20px;
+    color:#121723;
+    font-family: Anonymous Pro;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
 @media screen and (max-width:375px) {
     .header-container, .footer-content{
         flex-direction: column;
@@ -284,5 +294,20 @@ footer .nav-link {
     .card-img {
         max-width: 295px;
         border-radius: 12px;
+    }
+    .parameter {
+        font-size: 16px;
+    }
+    .about-sneaker-text {
+        font-size: 24px;
+    }
+    .text-p {
+        font-size: 16px;
+    }
+    .sneaker-title {
+        font-size: 32px;
+    }
+    .sneaker-subtitle {
+        font-size: 20px;
     }
 }
